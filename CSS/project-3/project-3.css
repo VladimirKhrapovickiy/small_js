@@ -1,0 +1,72 @@
+.project_3{
+    background-color: #1b356a !important;
+    height: 800px !important;
+}
+.h2_white{
+    color: white !important;
+    padding-top: 30px;
+}
+.review-container{
+    height: 450px;
+    background-color: white;
+    margin:50px;
+    border-radius: 20px;    
+}
+.dots{
+    display: block;
+    width: 65px;
+    margin: 0 auto;
+    padding-top: 60px;
+    
+}
+.review-text{
+    margin:15px 40px;
+    height: 180px;
+    font-size: 32px;
+    text-align: center;
+    color: #1b356a;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.review-img{
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+}
+.review-name{
+    color:white;
+    font-size: 32px;
+    text-align: center;
+}
+.rewiew-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.review-button{
+    width: 60px;
+    height: 60px;
+    margin-bottom: -60px;
+    cursor: pointer;
+}
+
+.previous:hover{
+    transition: 0.5s;
+    transform: scale(1.15, 1.15);
+}
+.previous:not(:hover){
+    transition: 0.5s;
+}
+.next:hover{
+    transition: 0.5s;
+    transform: scale(1.15, 1.15);
+}
+.next:not(:hover){
+    transition: 0.5s;
+}
+.previous:active{
+    transform: translateX(-10px);
+}
+.next:active{
+    transform: translateX(10px);
+}

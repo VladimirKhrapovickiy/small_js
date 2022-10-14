@@ -1,0 +1,135 @@
+a {
+  text-decoration: none;
+  color: gray;
+}
+a:hover {
+  color: black;
+}
+.project_4 {
+  border: 4px solid #f5f2f0;
+}
+.header {
+  background-color: white;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  font-family: Montserrat;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 10px;
+  border-radius: 15px;
+}
+.logo {
+  height: 70px;
+  z-index: 2;
+}
+.logo__picture {
+  z-index: 2;
+}
+
+.menu {
+  width: 500px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  z-index: 2;
+}
+.menu__ul {
+  display: flex;
+  list-style-type: none;
+  margin: 15px 0 0 0;
+  justify-content: space-between;
+}
+.contacts {
+  min-width: 135px;
+  margin: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  z-index: 2;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  z-index: 2;
+}
+.social__icon {
+  width: 20px;
+  height: 20px;
+  margin: 15px 0 0 0;
+}
+.social__icon_telegramm {
+  background-image: url(../../IMG/telegram_ico_white.svg);
+  background-repeat: no-repeat;
+}
+.social__icon_viber {
+  background-image: url(../../IMG/viber_ico_white.svg);
+  background-repeat: no-repeat;
+}
+.social__icon_whatsup {
+  background-image: url(../../IMG/whatsup_icon_white.svg);
+  background-repeat: no-repeat;
+}
+.nav-toggle {
+  display: none;
+}
+.show {
+  height: 175px !important;
+}
+@media (max-width: 1000px) {
+  .nav-toggle {
+    display: block;
+    height: 64px;
+  }
+  .nav-toggle-button {
+    display: block;
+    margin: auto 0 auto auto;
+    cursor: pointer;
+  }
+  .social {
+    display: none;
+  }
+  .contacts {
+    display: none;
+  }
+  .header {
+    padding-right: 0px;
+  }
+
+  .menu__ul {
+    flex-direction: column;
+    background-color: white;
+    margin: 16px 0 0 0;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .menu__li {
+    height: 35px;
+    text-align: center;
+    line-height: 32px;
+  }
+  .menu__li a {
+    display: block;
+    height: 100%;
+  }
+  .menu__li:hover {
+    transition: 0.5s;
+    background-color: #55b8e3;
+    padding-left: 10px;
+  }
+  .menu__li:not(:hover) {
+    transition: 0.5s;
+  }
+  .nav-toggle-button:hover {
+    transition: 0.5s;
+    transform: rotate(90deg);
+  }
+  .nav-toggle-button:not(:hover) {
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,29 @@
+.counter-number{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 120px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+
+}
+.counter-button{
+    margin:0 15px;
+    text-transform: uppercase;
+    border: 3px solid black;
+    border-radius: 7px;
+    padding: 5px;
+}
+.counter-button:hover{
+    box-shadow: 2px 2px 2px 1px rgba(61, 61, 63, 0.2);
+    transition: 0.5s;
+}
+.counter-button:not(:hover){
+    transition: 0.5s;
+}
+.counter-button:active {
+    background: #000000;
+    transform: translate(0em, 0.75em);
+    color: white;
+  }

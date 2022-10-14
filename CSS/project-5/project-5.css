@@ -1,0 +1,111 @@
+.project_5 {
+  font-family: "Press Start 2P", sans-serif !important;
+  color: white;
+  background-color: black !important;
+}
+.top_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.restart_button {
+  background-color: white;
+  width: 125px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  color: black;
+}
+.restart_button_text {
+  user-select: none;
+}
+.description {
+  line-height: 35px;
+}
+.aliens_container {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+.alien {
+  height: 70px;
+  width: 70px;
+  animation: alien-movement 4s steps(1, end) infinite;
+}
+.h2_project_5 {
+  padding: 0px 0px 40px;
+}
+.middle_container_rectangle {
+  background-color: white;
+  width: 20%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+.middle_line_container {
+  display: flex;
+}
+.middle_line {
+  height: 5px;
+  background-color: white;
+  width: 40%;
+  margin-top: 17.5px;
+}
+.bottom_container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 110px;
+}
+.info_container {
+  width: 250px;
+}
+.input_container {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.number_input {
+  width: 90px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white;
+}
+.chek_button {
+  background-color: white;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+  color: black;
+}
+@keyframes alien-movement {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(70px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-70px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

@@ -11,8 +11,16 @@ button {
 }
 .project_1 {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+}
+.project_1 h2 {
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  padding-top: 0;
+  margin-top: 15%;
 }
 .project_1__button {
   width: 210px;
@@ -25,6 +33,10 @@ button {
   border-radius: 0.75em;
   transition: transform 0.15s;
   transform-style: preserve-3d;
+  position: absolute;
+  left: 50%;
+  margin-left: -105px;
+  top: 25%;
 }
 .project_1__button::before {
   position: absolute;
@@ -60,7 +72,7 @@ button {
 .cool {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 7s ease infinite;
 }
 @keyframes gradient {
   0% {
@@ -72,4 +84,19 @@ button {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.project_1__pixel {
+  width: 23px;
+  height: 23px;
+  border: 1px solid transparent;
+  flex: 1 2 auto;
+  background-color: #f5f2f0;
+}
+.project_1__pixel:hover {
+  background-color: transparent;
+  /* transition-duration: 0.5s; */
+}
+.project_1__pixel:not(:hover) {
+  transition-duration: 5s;
 }

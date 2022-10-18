@@ -1,0 +1,19 @@
+.project_8 h2 {
+  position: absolute;
+  color: white;
+  left: 50%;
+  margin-left: -140px;
+}
+#tiles {
+  display: grid;
+  grid-template-columns: repeat(var(--colums), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+  overflow: hidden;
+}
+.tile {
+  background-color: rgb(15, 15, 15);
+  margin: 0.5px;
+}
+.tile:hover {
+  background-color: rgb(30, 30, 30);
+}

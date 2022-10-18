@@ -9,16 +9,18 @@ function switchBackground() {
   let element = document.querySelector(".project_1");
   pixel = document.querySelector(".project_1__pixel");
   element.classList.toggle("cool");
-  pixel == null ? projectDiv.prepend(pixelEl) : pixelEl.remove();
+  if (pixel == null) {
+    projectDiv.prepend(pixelEl);
+    pixel = document.querySelector(".project_1__pixel");
+    for (let i = 0; i < numberOfEl; i++) {
+      var el = pixel.cloneNode(true);
+      projectDiv.appendChild(el);
+    }
+  } else {
+    let pixels = document.querySelectorAll(".project_1__pixel");
+    for (i = 0; i < pixels.length; i++) {
+      pixels[i].parentNode.removeChild(pixels[i]);
+    }
+  }
 }
-projectDiv.prepend(pixelEl);
-pixel = document.querySelector(".project_1__pixel");
-for (let i = 0; i < numberOfEl; i++) {
-  var el = pixel.cloneNode(true);
-  projectDiv.appendChild(el);
-}
-
 document.querySelector(".project_1__button").onclick = switchBackground;
-console.log(numberOfEl);
-console.log(document.querySelector("project_1__pixel"));
-//pixel == null ? pixelEl.remove() : projectDiv.prepend(pixelEl);

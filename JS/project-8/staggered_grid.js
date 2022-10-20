@@ -1,13 +1,14 @@
 const wrapper = document.getElementById("tiles");
+
 let colums = Math.floor(wrapper.clientWidth / 20),
   rows = Math.floor(wrapper.clientHeight / 20);
 const colors = [
-  "rgb(199,36,177)",
-  "rgb(77, 77, 255)",
-  "rgb(224,231,34)",
-  "rgb(255,173,0)",
-  "rgb(219,62,177)",
-  "rgb(68,214,44)",
+  "#48494a",
+  "#272727",
+  "#cdcdcd",
+  "#000000",
+  "#cdcdcd",
+  // "rgb(68,214,44)",
 ];
 let count = -1;
 const handleOnlick = (index) => {

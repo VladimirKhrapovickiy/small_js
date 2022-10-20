@@ -1,10 +1,10 @@
 const wrapper = document.getElementById("tiles");
 
-let colums = Math.floor(wrapper.clientWidth / 20),
-  rows = Math.floor(wrapper.clientHeight / 20);
+let colums = Math.floor(wrapper.clientWidth / 15),
+  rows = Math.floor(wrapper.clientHeight / 15);
 const colors = [
-  "#48494a",
-  "#272727",
+  // "#48494a",
+  // "#272727",
   "#cdcdcd",
   "#000000",
   "#cdcdcd",

@@ -11,7 +11,7 @@ const colors = [
   // "rgb(68,214,44)",
 ];
 let count = -1;
-const handleOnlick = (index) => {
+const handleOnClick = (index) => {
   count++;
   anime({
     targets: ".tile",
@@ -26,7 +26,7 @@ const createTile = (index) => {
   const tile = document.createElement("div");
 
   tile.classList.add("tile");
-  tile.onclick = (e) => handleOnlick(index);
+  tile.onclick = (e) => handleOnClick(index);
   wrapper.style.setProperty("--colums", colums);
   wrapper.style.setProperty("--rows", rows);
   return tile;

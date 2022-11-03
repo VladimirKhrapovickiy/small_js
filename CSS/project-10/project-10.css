@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;900&family=Montserrat:wght@300&family=Poppins:wght@400;500;600;700;800&family=Press+Start+2P&display=swap");
+.project_10 {
+  background-color: #141414 !important;
+  position: relative;
+  width: 90%;
+  margin: 100px auto !important;
+}
+
+.mouse_trailer {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #f2d648;
+  margin-top: 20px;
+}
+
+.pacman__eye {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 5px;
+  right: 10px;
+  background: #333333;
+}
+
+.pacman__mouth {
+  background: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+  animation-name: eat;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+
+.project_10_h2 {
+  padding: 25px 0 0 0;
+  margin: 0;
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+}
+
+.img_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.img {
+  height: 70%;
+  width: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+.img_overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.img_1 {
+  background-image: url(../../IMG/mouse_trailer/119890-Reflection-Of-Trees.jpg);
+}
+.img_2 {
+  background-image: url(../../IMG/mouse_trailer/jpclassics03.jpg);
+}
+
+/* Animations*/
+.img_overlay:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+}
+.img_overlay:not(:hover) {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+.img:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+.img:not(:hover) {
+  transition: 0.5s;
+}
+
+@keyframes eat {
+  0% {
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+  }
+  25% {
+    clip-path: polygon(100% 60%, 44% 48%, 100% 40%);
+  }
+  50% {
+    clip-path: polygon(100% 50%, 44% 48%, 100% 50%);
+  }
+  75% {
+    clip-path: polygon(100% 59%, 44% 48%, 100% 35%);
+  }
+  100% {
+    clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+  }
+}

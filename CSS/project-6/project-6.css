@@ -52,6 +52,7 @@
   border-radius: 1rem;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  transition: 0.5s;
 }
 .overlay {
   position: fixed;
@@ -125,4 +126,8 @@
   margin-top: 5rem;
   color: gray;
   font-size: 11px;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
